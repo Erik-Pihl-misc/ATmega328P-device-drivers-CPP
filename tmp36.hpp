@@ -57,6 +57,16 @@ public:
    }
 
    /********************************************************************************
+   * tmp36: Kopieringskonstruktor raderad.
+   ********************************************************************************/
+   tmp36(tmp36&) = delete;       
+
+   /********************************************************************************
+   * tmp36: Tilldelningsoperator raderad.
+   ********************************************************************************/
+   tmp36& operator= (tmp36&) = delete;
+
+   /********************************************************************************
    * init: Initierar pin ansluten till temperatursensor TMP36 för mätning samt 
    *       utskrift av rumstemperaturen. Seriell överföring initieras också med 
    *       en baud rate (överföringshastighet) på 9600 kbps.
